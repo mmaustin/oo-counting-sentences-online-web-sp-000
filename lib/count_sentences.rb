@@ -15,6 +15,12 @@ class String
   end
 
   def count_sentences
-
+    array = []
+    self.split(/[.?!]/).each do |unit|
+      if unit.length != 0
+      array << unit
+      end
+    end
+    array.length
   end
 end
